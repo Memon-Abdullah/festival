@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Calender</title>
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        header {
+            display: block;
+            background-color: black;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 9;
+            opacity: 0.9;
+        }
+
+        .nav1 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 85px;
+
+        }
+
+        nav div ul li {
+            list-style-type: none;
+            margin: 0 23px;
+        }
+
+        nav div ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        .left a {
+            font-size: 2rem;
+            text-decoration: none;
+            color: white;
+        }
+
+        .input {
+            border-radius: 25px;
+            font-size: 17px;
+            background-color: #ee5007;
+            padding: 10px;
+            width: 150px;
+            color: white;
+            cursor: pointer;
+            border: 1px solid #dc3545;
+        }
+
+        nav div.center a:hover {
+            color: #dc3545;
+        }
+
+        .input:hover {
+            background-color: #dc3545;
+        }
+
+        /* header style end here */
+
+        .upper_div {
+            background-color: #ee5007;
+            height: 105px;
+        }
+
+        .lower_div {
+            background-color: black;
+            height: 275px;
+        }
+
+        .lower_div a:hover {
+            color: yellow;
+
+        }
+
+        .divp {
+            color: yellow;
+            display: inline-block;
+            margin-left: 200px;
+            margin-top: 40px;
+            font-size: large;
+            font-weight: bolder;
+        }
+
+        .footer_nav ul li {
+            display: inline-block;
+            padding-right: 30px;
+        }
+
+        .footer_nav {
+            margin-left: 25px;
+            width: 490px;
+            display: inline-block;
+
+        }
+
+        .nav_a {
+            display: inline-block;
+            padding-left: 215px;
+            font-size: larger;
+        }
+
+        #nav-a2 {
+            padding-left: 695px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #iba {
+            color: white;
+            display: inline-block;
+            margin-left: 290px;
+            margin-top: -15px;
+        }
+
+        .copy {
+            color: white;
+            padding: 40px;
+            margin-left: 450px;
+            font-size: x-large;
+        }
+
+        #ft {
+            font-size: 52px;
+            font-weight: bold;
+            color: white;
+            display: inline-block;
+            margin-left: 90px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .logos {
+            display: inline-block;
+            margin-right: 30px;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .logos:hover {
+            transform: rotateZ(90deg);
+            background-color: rgba(215, 215, 36);
+            border-radius: 35px;
+
+        }
+
+        #fb {
+            margin-left: 700px;
+        }
+
+        #links {
+            margin-left: 36px;
+            margin-right: 410px;
+        }
+
+        #women {
+            margin-left: 315px;
+        }
+
+
+        /* i hope footer style end here */
+
+
+        .heading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        main {
+            height: 990px;
+            background-image: url(bg.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-size: 1600px;
+        }
+
+        .tablediv {
+            width: 85%;
+            height: 620px;
+            margin-left: 99px;
+        }
+
+        main>h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .tablediv>table {
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+        }
+
+        .tablediv>table th,
+        td {
+            border: 1px solid black;
+            padding: 15px;
+            border-collapse: collapse;
+        }
+
+        .tablediv>table th {
+            color: white;
+            background-color: #ee5007;
+            border-collapse: collapse;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-radius: 90px;
+            
+        }
+        td{
+            color: white;
+            text-align: center;
+            margin:0;
+            padding: 0;
+        }
+
+        .black {
+            background-color: #212529;
+            color: white;
+            text-align: center;
+        }
+
+        .left-top-border-radius {
+            border-top-left-radius: 15px;
+        }
+
+        .right-top-border-radius {
+            border-top-right-radius: 15px;
+        }
+
+        .left-down-border-radius {
+            border-bottom-left-radius: 15px;
+        }
+
+        .right-down-border-radius {
+            border-bottom-right-radius: 15px;
+        }
+        .white{
+            background-color: white;
+        }
+        .one{
+            background-image:url(1.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+            
+        }
+        .ten{
+            background-image:url(10.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .twelve{
+            background-image:url(12.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .six{
+            background-image:url(6.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .eight{
+            background-image:url(8.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="nav1">
+            <div class="left"><a href="#">Festival Ismi</a></div>
+            <div class="center">
+                <ul>
+                    <li><a href="homepage.html">Home Page</a></li>
+                    <li><a href="calender.html">Calender</a></li>
+                    <li><a href="price.html">prices</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <a href="#"><button class="input" type="button" value="login">Get Tickets</button></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <br><br><br><br><br><br><br><br>
+        <h1 style="font-size: 45px;">Activity Programi</h1>
+        <br>
+        <div class="tablediv">
+
+            <table>
+                <tr>
+                    <th class="left-top-border-radius">History</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th class="right-top-border-radius">Only</th>
+                </tr>
+                <tr>
+                    <td class="black">1 Day</td>
+                    <td class="twelve"><h1>Pop Night</h1><br><h3>5:00-7:00 pm<br>By Adele</h3></td>
+                    <td class="white"></td>
+                    <td class="six"><h1>Rock & Roll</h1><br><h3>7:00-11:00 pm<br>By Fadwa</h3></td>
+                </tr>
+                <tr>
+                    <td class="black">2 Day</td>
+                    <td class="white"></td>
+                    <td class="eight"><h1>Pop Night</h1><br><h3>6:30-9:30 pm<br>By Dj Faker</h3></td>
+                    <td class="white"></td>
+                </tr>
+                <tr>
+                    <td class="black left-down-border-radius">3 Day</td>
+                    <td class="one"><h1>Country Music</h1><br><h3>4:30-7:30 pm<br>By Majid</h3></td>
+                    <td class="white"></td>
+                    <td class="right-down-border-radius ten"><h1>Free Styles</h1><br><h3>6:00-10:00 pm<br>By Members</h3></td>
+                </tr>
+
+            </table>
+        </div>
+    </main>
+    <footer>
+
+        <div class="upper_div">
+            <p id="ft">Festival Name</p>
+            &nbsp;<a id="fb" class="logos" href="#"><i class="fa fa-facebook"></i></a>
+            &nbsp;<a class="logos" href="#"><i class="fa fa-twitter"></i></a>
+            &nbsp;<a class="logos" href="#"><i class="fa fa-instagram"></i></a>
+            &nbsp;<a class="logos" href="#"><i class="fa fa-youtube-play"></i></a>
+            &nbsp;<a class="logos" href="#"><i class="fa fa-pinterest"></i></a>
+        </div>
+
+        <div class="lower_div">
+            <p class="divp" id="links">Links</p>
+            <p class="divp">Have a question?</p>
+            <p class="divp" id="women">Women</p>
+            <br>
+            <br>
+            <nav class="footer_nav">
+                <ul>
+                    <li><a href="homepage.html">Home Page</a></li>
+                    <li><a href="#">My Home</a></li>
+                    <li><a href="#">Artists</a></li>
+                    <li><a href="price.html">Prices</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <a class="nav_a" href="#">050-080-0760</a>
+            <br>
+            <a id="nav-a2" class="nav_a" href="mailto:hello@company.com">hello@company.com</a>
+            <p id="iba">Sukkur hall, Sindh </p>
+            <br><br>
+            <p class="copy">copyright &copy; 2023 Made by HYDER &hearts;</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

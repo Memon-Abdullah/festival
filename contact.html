@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Contact Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family:sans-serif;
+        }
+
+        header {
+            display: block;
+            background-color: black;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 9;
+            opacity: 0.9;
+        }
+
+        .nav1 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 85px;
+
+        }
+
+        nav div ul li {
+            list-style-type: none;
+            margin: 0 23px;
+        }
+
+        nav div ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        .left a{
+            font-size: 2rem;
+            text-decoration: none;
+            color: white;
+        }
+
+        .input {
+            border-radius: 27px;
+            font-size: 17px;
+            background-color: #ee5007;
+            padding: 10px;
+            width: 120px;
+            color: white;
+            cursor: pointer;
+        }
+        nav div.center a:hover {
+            color: #dc3545;
+        }
+
+        .input:hover {
+            background-color: #dc3545;
+        }
+
+        /* header style end here */
+
+        .upper_div {
+            background-color: #ee5007;
+            height: 105px;
+        }
+
+        .lower_div {
+            background-color: black;
+            height: 275px;
+        }
+
+        .lower_div a:hover {
+            color: yellow;
+
+        }
+
+        .divp {
+            color: yellow;
+            display: inline-block;
+            margin-left: 200px;
+            margin-top: 40px;
+            font-size: large;
+            font-weight: bolder;
+        }
+
+        .footer_nav ul li {
+            display: inline-block;
+            padding-right: 30px;
+        }
+
+        .footer_nav {
+            margin-left: 25px;
+            width: 480px;
+            display: inline-block;
+
+        }
+
+        .nav_a {
+            display: inline-block;
+            padding-left: 215px;
+            font-size: larger;
+        }
+
+        #nav-a2 {
+            padding-left: 695px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #iba {
+            color: white;
+            display: inline-block;
+            margin-left: 290px;
+            margin-top: -15px;
+        }
+
+        .copy {
+            color: white;
+            padding: 40px;
+            margin-left: 450px;
+            font-size: x-large;
+        }
+
+        #ft {
+            font-size: 52px;
+            font-weight: bold;
+            color: white;
+            display: inline-block;
+            margin-left: 90px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .logos {
+            display: inline-block;
+            margin-right: 30px;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .logos:hover {
+            transform: rotateZ(90deg);
+            background-color: rgba(215, 215, 36);
+            border-radius: 35px;
+
+        }
+
+        #fb {
+            margin-left: 700px;
+        }
+
+        #links{
+            margin-left: 36px;
+            margin-right: 410px;            
+        }
+        #women{
+            margin-left: 315px;
+        }
+
+
+        /* i hope footer style end here */
+
+        main{
+            height: 730px;
+           background-color: whitesmoke;
+        }
+
+        .heading{
+            margin-top: 90px;  
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 1.5rem;
+            background-color: whitesmoke;
+            padding: 10px;
+        }
+
+        .form{
+            background: white;
+            width: 60%;
+            display: flex;
+            align-items: center;
+            margin-left: 340px;
+            border-radius: 10px;
+        }
+        form{
+            /* background-color: black; */
+            width: 100%;
+            height: 100%;
+            margin-top: 40px;
+            margin-left: 40px; ;
+            
+        }
+        .area{
+            height: 30px;
+            width: 350px;
+            padding: 10px;
+            border: 0.5px solid black;
+            border-radius: 4px;
+            margin: 0 20px;
+        }
+        .cmp{
+            height: 30px;
+            width: 767px;
+            padding: 10px;
+            border: 0.5px solid black;
+            border-radius: 4px;
+            margin: 0 20px;   
+        }
+        #Message{
+            padding:10px ;
+            margin: 35px 20px;
+            border-radius: 4px;
+            border: 0.5px solid black;
+            width: 767px;
+        }
+        .button{
+            padding :12px;
+            margin: 0 300px;
+            margin-bottom:40px;
+            width: 260px;
+            border-radius: 30px;
+            color: white;
+            background-color: #ee5007;
+            font-size: 20px;
+            font-weight: 300;
+        }
+        .button:hover{
+            background-color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav1">
+            <div class="left"><a href="#">Festival Ismi</a></div>
+            <div class="center">
+                <ul>
+                    <li><a href="homepage.html">Home Page</a></li>
+                    <li><a href="calender.html">Calender</a></li>
+                    <li><a href="price.html">prices</a></li>
+                    <li class="cu"><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <a href="ticket.html"><button class="input" type="button" value="login">Get Tickets</button></a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <h1 class="heading">Interested? let's talk</h1>
+        <div class="form">
+            <form >
+                <input class="area" type="text" placeholder="Name" required size="40">
+                <input class="area" type="email" placeholder="Email Address" required size="40">
+                <br>
+                <br>
+                <br>
+                <input class="cmp" type="text" placeholder="company" required size="80">
+                <br>
+                <textarea name="Message" id="Message" cols="110" rows="6" placeholder="Message" required></textarea>
+                <br>
+                <input class="button" type="submit" value=" Send Message">
+            </form>
+        </div>
+    </main>
+    <footer>
+
+        <div class="upper_div">
+            <p id="ft">Festival Name</p>
+            &nbsp;<a id="fb" class="logos" href="#"><i class="fa fa-facebook"></i></a>
+            &nbsp;<a class="logos" href="#"><i class="fa fa-twitter"></i></a>
+            &nbsp;<a class="logos" href="#"><i class="fa fa-instagram"></i></a>
+            &nbsp;<a class="logos" href="#"><i class="fa fa-youtube-play"></i></a>
+            &nbsp;<a class="logos" href="#"><i class="fa fa-pinterest"></i></a>
+        </div>
+
+        <div class="lower_div">
+            <p class="divp" id="links">Links</p>
+            <p class="divp">Have a question?</p>
+            <p class="divp" id="women">Women</p>
+            <br>
+            <br>
+            <nav class="footer_nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home Page</a></li>
+                    <li><a href="#">Artists</a></li>
+                    <li><a href="#">Calender</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <a class="nav_a" href="#">050-080-0760</a>
+            <br>
+            <a id="nav-a2" class="nav_a"
+                href="mailto:hello@company.com">hello@company.com</a>
+            <p id="iba">Sukkur hall, Sindh </p>
+            <br><br>
+            <p class="copy">copyright &copy; 2023 Made by HYDER &hearts;</p>
+        </div>
+
+</footer>
+    
+</body>
+</html>

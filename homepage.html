@@ -1,0 +1,590 @@
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .bgvideo {
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+
+        header {
+            display: block;
+            background-color: black;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 9;
+            opacity: 0.9;
+        }
+
+        .nav1 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 85px;
+
+        }
+
+        nav div ul li {
+            list-style-type: none;
+            margin: 0 23px;
+        }
+
+        nav div ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        .left a {
+            font-size: 2rem;
+            text-decoration: none;
+            color: white;
+        }
+
+        .input {
+            border-radius: 25px;
+            font-size: 17px;
+            background-color: #ee5007;
+            padding: 10px;
+            width: 150px;
+            color: white;
+            cursor: pointer;
+            border: 1px solid #dc3545;
+        }
+
+        nav div.center a:hover {
+            color: #dc3545;
+        }
+
+        .input:hover {
+            background-color: #dc3545;
+        }
+
+        /* header style finished */
+        .upper_div {
+            background-color: #ee5007;
+            height: 105px;
+        }
+
+        .lower_div {
+            background-color: black;
+            height: 275px;
+        }
+
+        .lower_div a:hover {
+            color: yellow;
+
+        }
+
+        .divp {
+            color: yellow;
+            display: inline-block;
+            margin-left: 200px;
+            margin-top: 40px;
+            font-size: large;
+            font-weight: bolder;
+        }
+
+        .footer_nav ul li {
+            display: inline-block;
+            padding-right: 30px;
+        }
+
+        .footer_nav {
+            margin-left: 25px;
+            width: 490px;
+            display: inline-block;
+
+        }
+
+        .nav_a {
+            display: inline-block;
+            padding-left: 215px;
+            font-size: larger;
+        }
+
+        #nav-a2 {
+            padding-left: 695px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #iba {
+            color: white;
+            display: inline-block;
+            margin-left: 290px;
+            margin-top: -15px;
+        }
+
+        .copy {
+            color: white;
+            padding: 40px;
+            margin-left: 450px;
+            font-size: x-large;
+        }
+
+        #ft {
+            font-size: 52px;
+            font-weight: bold;
+            color: white;
+            display: inline-block;
+            margin-left: 90px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .logos {
+            display: inline-block;
+            margin-right: 30px;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .logos:hover {
+            transform: rotateZ(90deg);
+            background-color: rgba(215, 215, 36);
+            border-radius: 35px;
+
+        }
+
+        #fb {
+            margin-left: 700px;
+        }
+
+        #links {
+            margin-left: 36px;
+            margin-right: 410px;
+        }
+
+        #women {
+            margin-left: 315px;
+        }
+
+
+        /* i hope footer style end here */
+        main {
+            height: 2800px;
+            width: 100%;
+            padding:0;
+            margin:0;    
+        }
+        *div{
+            padding: 0;
+            margin: 0;
+        }
+        .bgvideo {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 28%;
+        }
+
+        video {
+            width: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .leftone {
+            position: absolute;
+            
+            bottom: 5px;
+            z-index: 2;
+            float: left;
+            width: 250px;
+            margin-left: 90px;
+        }
+
+        .rightone {
+            position: relative;
+            left: 640px;
+            bottom: 135px;            
+            z-index: 2;
+            width: 290px;   
+        }
+        .rightonee{
+            position: relative;
+            left: 1200px;
+            bottom: 155px;            
+            z-index: 2;
+            width: 290px;   
+        }
+        .one > p{
+            position: absolute;
+            top: 360px;
+            left: 660px;
+            z-index: 3;
+            background-color: transparent;
+            color: white;
+        }
+        .one > h1{
+            position: absolute;
+            top: 390px;
+            left: 500px;
+            z-index: 3;
+            background-color: transparent;
+            color: white;
+            font-size: 60px;
+        }
+        .lets_start{
+            position: absolute;
+            top: 490px;
+            left:680px;
+            z-index:3;
+        }
+        .two{
+            margin-top: 0;
+            background-image: url(bg.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 27%;
+            position: relative;
+        }
+        .lefttwo{
+            position: absolute;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 700px;
+            height: 600px;
+            margin-top: 70px;
+            margin-left: 20px;
+            padding: 8px;
+        }
+        .righttwo{
+            background-image: url(2.jpg);
+            position: absolute;
+            left: 760px;
+            width: 640px;
+            height: 427px;
+            margin-top: 100px;
+            border-radius: 30px;
+        }
+        .righttwo .child{
+            width: 570px;
+            height: 140px;
+            position: absolute;
+            top:260px;
+            left: 31px;
+            color: black;
+            border-radius: 40px;
+            background-color: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(5px) saturate(180%);            
+        }
+        .righttwo .child > i{
+            
+            position: relative;
+            top: 20px;
+            margin-left: 20px;
+            background-color: #f8cb2e;
+            border-radius: 100%;
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            text-align: center;
+            font-size: 2rem;
+        }
+        .righttwo .child > h1{
+            display: inline-block;
+            width: 380px;
+            padding: 9px;   
+        }
+        .righttwo .child > p{
+            margin-left: 100px;
+            display: inline-block;
+            color: #717275;
+            font-size: 17px;
+            font-weight: 300; 
+        }
+        
+        .i{
+            font-size: 50px;
+            padding: 10px;
+        }
+        .ii{
+            margin-left: 10px;
+            font-size: 16px;
+            font-weight: 300;
+            color:  rgba(255, 255, 255, 0.5) !important;
+        }
+        .iii{
+            margin-left: 10px;
+            margin-top: 30px;
+            font-size: 22px;
+            font-weight: 700px;
+        }
+        .iv{
+            margin-left: 10px;
+            margin-top: 30px;
+            font-size: 16px;
+            font-weight: 300;
+            color:  rgba(255, 255, 255, 0.5) !important;
+        }
+        .v{
+            margin-left: 10px;
+            margin-top: 30px;
+            font-size: 22px;
+            font-weight: 700px;
+        }
+        .vi{
+            margin-top: 30px;
+            margin-left: 10px;
+            font-size: 16px;
+            font-weight: 300;
+            color:  rgba(255, 255, 255, 0.5) !important;
+        }
+        
+
+        .three{
+            position: relative;
+            margin-top: 0;
+            height: 400px;
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 0;
+            
+        }
+        .three div h1{
+            text-align: center;
+            padding: 20px;
+            font-size: 40px;
+            
+        }
+        .pic_one{
+            border-radius: 30px;
+            display: inline;
+            height: 900px;
+            margin-left: 90px;
+            margin-top: 29px;
+        }
+        .pic_two{
+            position: absolute;
+            border-radius: 30px;
+            display: inline;
+            height: 420px;
+            margin-left: 20px;
+            margin-top: 30px;
+        }
+        .pic_three{
+            border-radius: 30px;
+            display: inline-block;
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+        .captionone{
+            position: absolute;
+            top: 830px;
+            left: 150px;
+            width: 470px;
+            height: 200px;
+            border-radius: 50px;
+            background-color: black;
+            color:white;
+            padding-left: 60px;
+            opacity: 0.8;
+            display: none;
+        }
+        .captiontwo{
+            position: absolute;
+            top: 340px;
+            left: 775px;
+            width: 450px;
+            height: 100px;
+            border-radius: 50px;
+            padding: 60px;
+            background-color: black;
+            color: white;
+            opacity: 0.8;
+            display: none;
+        }
+        .captionthree{ 
+            position: absolute;
+            top: 820px;
+            left: 789px;
+            width: 430px;
+            height: 100px;
+            border-radius: 50px;
+            background-color: black;
+            color: white;
+            opacity: 0.8;
+            padding: 60px;
+            display: none;
+        }
+        .pic_one:hover .c1 {
+            display: block;
+            z-index: 4;
+        }
+        .pic_two:hover .c2{
+            display: block;
+            z-index: 4;
+        }
+        .pic_three:hover .c3{
+            display: block;
+            z-index: 4;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="nav1">
+            <div class="left"><a href="#">Festival Ismi</a></div>
+            <div class="center">
+                <ul>
+                    <li><a href="homepage.html">Home Page</a></li>
+                    <li><a href="calender.html">Calender</a></li>
+                    <li><a href="price.html">prices</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <a href="ticket.html"><button class="input" type="button" value="login">Get Tickets</button></a>
+            </div>
+        </nav>
+    </header>
+    <!-- header end -->
+    <main>
+        <div class="bgvideo one">
+            <p>FESTIVAL ISMI PRESNTS</p>
+            <h1>Festival Live 2023</h1>
+            <div class="lets_start">
+                <a href="#about"><button class="input" type="button" value="login">Lets Start</button></a>
+            </div>
+            <video autoplay muted loop>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+            <div class="leftone"> <i class=" fa fa-clock-o" style="color: #ee5007;font-size: x-large;"></i>
+                <strong style="font-size: larger;"> 10-12<sup>th</sup>,July 2023</strong>
+            </div>
+            <div class="rightone">
+                <i class="fa fa-map-marker" style="color: #ee5007;font-size: x-large;"></i>
+                <strong style="font-size: larger;"> Isparta Center, Pakistan</strong>
+            </div>
+            <div class="rightonee">
+                <strong style="font-size: larger;">Share:</strong>
+                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-facebook" style="color: #ee5007;font-size: x-large;"></i>
+                &nbsp;&nbsp;&nbsp;<i class="fa fa-twitter" style="color: #ee5007;font-size: x-large;"></i>
+                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-instagram" style="color: #ee5007;font-size: x-large;"></i>
+            </div>
+            
+        </div>
+        <div class="two " id="about">
+            <div class="lefttwo">
+                <p class="i">"About" the name of the festival"</p>
+                <p class="ii">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                    repellendus temporibus consectetur vel sunt illum provident
+                    earum praesentium quas corrupti.dolor sit amet consectetur
+                    adipisicing eli.
+                </p>
+                <h6 class="iii">Once in a Lifetime Experience</h6>
+                <p class="iv">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Perspiciatis ipsam similique sed.
+                </p>
+                <h6 class="v">All Night Party</h6>
+                <p class="vi">
+                    This Website is made by Web Students
+                </p>
+            </div>
+            <div class="righttwo">
+                <div class="child">
+                    <i class="fa fa-lightbulb-o"></i>
+                    <h1>it's a happy moment</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+            </div>
+        </div>
+        <div class="three">
+            <div><h1>Meet the Artists</h1></div>
+            <img class="pic_one" src="12.jpg" alt="gitarwithBoy">
+            <div class="captionone c1" >
+                <br><br>
+                Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;John
+                <br><br><br>
+                Birthday:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;August 16,1958
+                <br><br><br>
+                Music:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pop,R&B
+                <br>
+            </div>
+            <img class="pic_two"  src="7.jpg" alt="starwithGitar">
+            <div class="captiontwo c2">
+                Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bruno Bros
+                <br><br><br>
+                Birthday:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;October 8,1985
+                <br><br><br>
+                Music:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pop
+                <br>
+            </div>
+            <img class="pic_three"  src="13.jpg" alt="gitarwithGirl">
+            <div class="captionthree c3">
+                Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;farhan Majda
+                <br><br><br>
+                Birthday:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Feb 20,1988
+                <br><br><br>
+                Music:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Country
+                <br>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="upper_div">
+            <p id="ft">Festival Name</p>
+            &nbsp;<a id="fb" class="logos" href="#"><i class="fa fa-facebook"></i></a>
+            &nbsp;<a class="logos" href="#"><i class="fa fa-twitter"></i></a>
+            &nbsp;<a class="logos" href="#"><i class="fa fa-instagram"></i></a>
+            &nbsp;<a class="logos" href="#"><i class="fa fa-youtube-play"></i></a>
+            &nbsp;<a class="logos" href="#"><i class="fa fa-pinterest"></i></a>
+        </div>
+
+        <div class="lower_div">
+            <p class="divp" id="links">Links</p>
+            <p class="divp">Have a question?</p>
+            <p class="divp" id="women">Women</p>
+            <br>
+            <br>
+            <nav class="footer_nav">
+                <ul>
+                    <li><a href="home.html">Home Page</a></li>
+                    <li><a href="homepage">My Home</a></li>
+                    <li><a href="#">Artists</a></li>
+                    <li><a href="price.html">Prices</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <a class="nav_a" href="#">050-080-0760</a>
+            <br>
+            <a id="nav-a2" class="nav_a" href="mailto:hello@company.com">hello@company.com</a>
+            <p id="iba">Sukkur hall, Sindh </p>
+            <br><br>
+            <p class="copy">copyright &copy; 2023 Made by HYDER &hearts;</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
